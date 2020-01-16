@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:wp="clr-namespace:Vapolia.WheelPickerForms;assembly=Vapolia.WheelPickerForms"
+             mc:Ignorable="d"
+             x:Class="LuckyStar.Views.ItemsPage"
+             Title="{Binding Title}"
+             x:Name="BrowseItemsPage">
+    <!--xmlns:wp="clr-namespace:Vapolia.WheelPickerForms;assembly=Vapolia.WheelPickerForms"-->
+    <ContentPage.ToolbarItems>
+        <!--<ToolbarItem Text="Add"
+                     Clicked="AddItem_Clicked" />-->
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0" />
+            <RowDefinition />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+
+            <ListView Grid.Row="0"
+                      x:Name="ItemsListView"
+                      ItemsSource="{Binding LuckyItems}">
+                <ListView.Header>
+                    <Grid BackgroundColor="LightBlue"
+                          HeightRequest="30">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.Resources>
+                            <Style TargetType="Label">
+                                <Setter Property="HorizontalTextAlignment"
+                                        Value="Center" />
+                                <Setter Property="VerticalTextAlignment"
+                                        Value="Center" />
+                            </Style>
+                        </Grid.Resources>
+
+                        <Label Grid.Column="0"
+                               Text="One"
+                               HorizontalOptions="Center" />
+                        <Label Grid.Column="1"
+                               Text="Two"
+                               HorizontalOptions="Center" />
+                        <Label Grid.Column="2"
+                               Text="Three"
+                               HorizontalOptions="Center" />
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.Resources>
+                                    <Style TargetType="Label">
+                                        <Setter Property="HorizontalTextAlignment"
+                                                Value="Center" />
+                                        <Setter Property="VerticalTextAlignment"
+                                                Value="Center" />
+                                    </Style>
+                                </Grid.Resources>
+
+                                <Label Grid.Column="0"
+                                       Text="{Binding CubeA}"
+                                       HorizontalOptions="Center" />
+                                <Label Grid.Column="1"
+                                       Text="{Binding CubeB}"
+                                       HorizontalOptions="Center" />
+                                <Label Grid.Column="2"
+                                       Text="{Binding CubeC}"
+                                       HorizontalOptions="Center" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Grid Grid.Row="1"
+                  x:Name="Percent_Grid"
+                  Margin="0,5,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+            </Grid>
+
+            <!--<ListView Grid.Row="2"
+                      x:Name="Select_ListView"
+                      ItemsSource="{Binding SelectItems}"
+                      ItemSelected="Select_ListView_ItemSelected">
+                <ListView.Header>
+                    <Grid HeightRequest="25"
+                          BackgroundColor="BurlyWood">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.Resources>
+                            <Style TargetType="Label">
+                                <Setter Property="HorizontalTextAlignment"
+                                        Value="Center" />
+                                <Setter Property="VerticalTextAlignment"
+                                        Value="Center" />
+                            </Style>
+                        </Grid.Resources>
+                        <Label Grid.Column="0"
+                               Text="Bầu" />
+                        <Label Grid.Column="1"
+                               Text="Cua" />
+                        <Label Grid.Column="2"
+                               Text="Tôm" />
+                        <Label Grid.Column="3"
+                               Text="Cá" />
+                        <Label Grid.Column="4"
+                               Text="Gà" />
+                        <Label Grid.Column="5"
+                               Text="Nai" />
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.Resources>
+                                    <Style TargetType="CheckBox">
+                                        <Setter Property="HorizontalOptions"
+                                                Value="Center" />
+                                        <Setter Property="VerticalOptions"
+                                                Value="Center" />
+                                    </Style>
+
+                                    <Style TargetType="Switch">
+                                        <Setter Property="HorizontalOptions"
+                                                Value="Center" />
+                                        <Setter Property="VerticalOptions"
+                                                Value="Center" />
+                                    </Style>
+                                </Grid.Resources>
+                                
+                                <CheckBox Grid.Column="0"
+                                          IsChecked="{Binding Items[0].IsChecked, Mode=TwoWay}" />
+                                <CheckBox Grid.Column="1"
+                                          IsChecked="{Binding Items[1].IsChecked, Mode=TwoWay}" />
+                                <CheckBox Grid.Column="2"
+                                          IsChecked="{Binding Items[2].IsChecked, Mode=TwoWay}" />
+                                <Switch Grid.Column="3"
+                                        IsToggled="{Binding Items[3].IsChecked, Mode=TwoWay}" />
+                                <Switch Grid.Column="4"
+                                        IsToggled="{Binding Items[4].IsChecked, Mode=TwoWay}" />
+                                <Switch Grid.Column="5"
+                                        IsToggled="{Binding Items[5].IsChecked, Mode=TwoWay}" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid.Resources>
+                    <Style TargetType="Label">
+                        <Setter Property="HorizontalTextAlignment"
+                                Value="Center" />
+                    </Style>
+                </Grid.Resources>
+
+                <Picker Grid.Row="1"
+                        x:Name="CubeA_Picker"
+                        HorizontalOptions="FillAndExpand"
+                        ItemsSource="{Binding Path=SelectA, Mode=TwoWay}"
+                        ItemDisplayBinding="{Binding Name}" />
+                <Picker Grid.Row="1"
+                        Grid.Column="1"
+                        x:Name="CubeB_Picker"
+                        ItemsSource="{Binding Path=SelectB, Mode=TwoWay}"
+                        ItemDisplayBinding="{Binding Name}" />
+                <Picker Grid.Row="1"
+                        Grid.Column="2"
+                        x:Name="CubeC_Picker"
+                        ItemsSource="{Binding Path=SelectC, Mode=TwoWay}"
+                        ItemDisplayBinding="{Binding Name}" />
+
+                <wp:WheelPicker x:Name="WheelDayPicker"
+                                Grid.Column="3"
+                                ItemsSourceSimple="{Binding SelectC}"
+                                SelectedItemsIndex="0"
+                                ItemTextColor="Green"
+                                ItemTextSelectedColor="Lime"
+                                ItemTextFont="Italic"
+                                HorizontalOptions="Fill"
+                                SelectionLinesColor="Aquamarine">
+                    <wp:WheelPicker.WheelDefinitions>
+                        <!--Simplest version
+                    <wp:WheelDefinition Width="Auto" HorizontalOptions="Left" Alignment="Center" />-->
+                        <!--Circular wheel
+                    <wp:WheelDefinition Width="Auto" HorizontalOptions="Left" Alignment="Center" IsCircular="True" />-->
+                        <!-- Templated wheel. Width can not be Auto. RowHeight is 44 by default on iOS. -->
+                        <!-- When RowHeight is lower than HeightRequest, row spacing disappear, making a nice no-gap effect -->
+                        <wp:WheelDefinition Width="*"
+                                            HorizontalOptions="Left"
+                                            Alignment="Center"
+                                            IsCircular="True">
+                            <wp:WheelDefinition.RowHeight>
+                                <OnPlatform x:TypeArguments="x:Double"
+                                            Android="48"
+                                            iOS="48" />
+                                <!--
+                        Does not work
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="iOS" Value="48"/>
+                            <On Platform="Android" Value="50"/>
+                        </OnPlatform>-->
+                            </wp:WheelDefinition.RowHeight>
+                            <wp:WheelDefinition.ItemTemplate>
+                                <DataTemplate>
+                                    <Image Source="{Binding .}"
+                                           HeightRequest="48"
+                                           Aspect="AspectFill" />
+                                </DataTemplate>
+                            </wp:WheelDefinition.ItemTemplate>
+                        </wp:WheelDefinition>
+                    </wp:WheelPicker.WheelDefinitions>
+                </wp:WheelPicker>
+            </Grid>
+        </Grid>
+
+        <Button x:Name="RunLucky"
+                Grid.Row="2"
+                Text="Lucky"
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="Green"
+                Clicked="RunLucky_Clicked" />
+    </Grid>
+</ContentPage>

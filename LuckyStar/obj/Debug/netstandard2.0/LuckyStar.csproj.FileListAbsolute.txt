@@ -1,0 +1,32 @@
+D:\Project\New folder\LuckyStar\LuckyStar\bin\Debug\netstandard2.0\LuckyStar.deps.json
+D:\Project\New folder\LuckyStar\LuckyStar\bin\Debug\netstandard2.0\LuckyStar.dll
+D:\Project\New folder\LuckyStar\LuckyStar\bin\Debug\netstandard2.0\ref\LuckyStar.dll
+D:\Project\New folder\LuckyStar\LuckyStar\bin\Debug\netstandard2.0\LuckyStar.pdb
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\LuckyStar.csprojAssemblyReference.cache
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\LuckyStar.AssemblyInfoInputs.cache
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\LuckyStar.AssemblyInfo.cs
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\LuckyStar.dll
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\ref\LuckyStar.dll
+D:\Project\New folder\LuckyStar\LuckyStar\obj\Debug\netstandard2.0\LuckyStar.pdb
+D:\Project\LuckyStarMobile\LuckyStar\bin\Debug\netstandard2.0\LuckyStar.deps.json
+D:\Project\LuckyStarMobile\LuckyStar\bin\Debug\netstandard2.0\LuckyStar.dll
+D:\Project\LuckyStarMobile\LuckyStar\bin\Debug\netstandard2.0\ref\LuckyStar.dll
+D:\Project\LuckyStarMobile\LuckyStar\bin\Debug\netstandard2.0\LuckyStar.pdb
+D:\Project\LuckyStarMobile\LuckyStar\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Project\LuckyStarMobile\LuckyStar\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+D:\Project\LuckyStarMobile\LuckyStar\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+D:\Project\LuckyStarMobile\LuckyStar\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\Project\LuckyStarMobile\LuckyStar\obj\Debug\netstandard2.0\LuckyStar.AssemblyInfoInputs.cache
+D:\Project\LuckyStarMobile\LuckyStar\obj\Debug\netstandard2.0\LuckyStar.AssemblyInfo.cs
+D:\Project\LuckyStarMobile\LuckyStar\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Project\LuckyStarMobile\LuckyStar\obj\Debug\netstandard2.0\LuckyStar.dll
+D:\Project\LuckyStarMobile\LuckyStar\obj\Debug\netstandard2.0\ref\LuckyStar.dll
+D:\Project\LuckyStarMobile\LuckyStar\obj\Debug\netstandard2.0\LuckyStar.pdb
+D:\Project\LuckyStarMobile\LuckyStar\obj\Debug\netstandard2.0\LuckyStar.csprojAssemblyReference.cache
